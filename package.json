@@ -1,0 +1,34 @@
+{
+  "name": "mystriingr",
+  "version": "1.0.0",
+  "description": "User profiles to log and store past stringing jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grezzzy/MyStriingr.git"
+  },
+  "author": "Gabriel Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grezzzy/MyStriingr/issues"
+  },
+  "homepage": "https://github.com/grezzzy/MyStriingr#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
