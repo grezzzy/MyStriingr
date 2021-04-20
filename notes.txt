@@ -1,0 +1,16 @@
+Roadmap
+
+Implement Postgres
+Write Seeding Script
+
+Implement Login Authentication
+
+Build Stringing Effect Tool
+
+Build modal for adding entries
+
+user profile pic
+
+build testsuite
+
+
