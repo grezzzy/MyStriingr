@@ -8,6 +8,8 @@ CREATE TABLE IF NOT EXISTS users (
   last_name varchar(30) NOT NULL,
   username varchar(20) NOT NULL UNIQUE,
   email varchar(50) NOT NULL UNIQUE,
+  salt varchar(40) NOT NULL,
+  passhash varchar(100) NOT NULL,
   PRIMARY KEY(user_id)
 );
 
@@ -25,8 +27,6 @@ CREATE TABLE IF NOT EXISTS jobs (
       -- ON DELETE CASCADE
 );
 
---CREATE TYPE ratings AS ENUM("1","2","3","4","5");
-
 CREATE TABLE IF NOT EXISTS reviews (
   review_id int GENERATED ALWAYS AS IDENTITY,
   job_id int,
@@ -35,4 +35,12 @@ CREATE TABLE IF NOT EXISTS reviews (
   CONSTRAINT fk_job
     FOREIGN KEY (job_id)
       REFERENCES jobs(job_id)
-)
+      --  ON DELETE CASCASE
+);
+
+--Do I need a table for storing, salt, hashpasswords insead of users
+-- CREATE TABLE IF NOT EXISTS passwords (
+--   user_id int,
+--   salt varchar(40),
+--   hashpass varchar(100)
+-- )
