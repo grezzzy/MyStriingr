@@ -1,13 +1,15 @@
-const express:any =  require("express");
+import * as express from 'express';
+import * as db from "../database";
 const app = express();
 const port:number = 3000;
-const db:any =  require("../database");
 
-//app.use(express.static('./client/public'))
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+
+app.use(express.static('./client/public'));
+
+// app.get('/', (req,res)=> {
+//   res.end();
+// });
 
 app.listen(port, ()=> {
   console.log(`App is listening to port: ${port}`);

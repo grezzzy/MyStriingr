@@ -7,6 +7,7 @@
     "start": "nodemon ./server/index.js",
     "prebuild": "",
     "build": "webpack -w",
+    "createDB": "psql < ./database/schema.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

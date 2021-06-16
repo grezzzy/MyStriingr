@@ -14,3 +14,8 @@ user profile pic
 build testsuite
 
 
+
+Typescript build Process:
+Pre-build checks for errors using typescript.
+Build compiles files into js
+
