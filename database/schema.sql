@@ -39,8 +39,11 @@ CREATE TABLE IF NOT EXISTS reviews (
 );
 
 --Do I need a table for storing, salt, hashpasswords insead of users
--- CREATE TABLE IF NOT EXISTS passwords (
+-- CREATE TABLE IF NOT EXISTS logins (
 --   user_id int,
---   salt varchar(40),
---   hashpass varchar(100)
+--   salt varchar(40) NOT NULL,
+--   passhash varchar(100) NOT NULL,
+--   CONSTRAINT fk_user
+--     FOREIGN KEY (user_id)
+--       REFERENCES users(user_id)
 -- )
